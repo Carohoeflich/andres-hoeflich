@@ -1,10 +1,39 @@
- .about-container{
+ .about-container {
      display: flex;
-     background-color: rgba(237,237,237,255);
-     
+     background: linear-gradient(to top, #cecece, #f8f8f8);
+
      & img {
          width: 100vw;
          height: 100vh;
          object-fit: cover;
+     }
+ }
+
+ .about-titulo {
+     margin-top: 17vh;
+     line-height: 10vh;
+
+     & h1 {
+         display: block;
+         font-size: 60px;
+         color: $primarycolor;
+         text-align: center;
+         border-bottom: solid 1px $primarycolor;
+         border-bottom-style: dashed;
+         margin: 0 7vw;
+     }
+
+     & span {
+         display: block;
+         font-size: 7vw;
+         letter-spacing: -0.4vw;
+         color: $accentcolor;
+     }
+
+     & p{
+        margin-top: 30px;
+        padding: 0 10vw;
+        text-align: justify;
+        line-height: 1.5;
      }
  }

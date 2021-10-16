@@ -38,22 +38,24 @@
   }
 }
 
-h1 {
-  z-index: 10;
-  font-family: 'Poppins', sans-serif;
-  color: $secondarycolor;
-  text-transform: uppercase;
-  letter-spacing: 3vw;
-  line-height: 1.2;
-  font-size: 3vw;
-  text-align: center;
-
-  span {
-    display: block;
+.titulo {
+  & h1 {
+    z-index: 10;
     font-family: 'Poppins', sans-serif;
-    font-size: 10vw;
-    letter-spacing: -0.7vw;
-    color: $accentcolor;
+    color: $secondarycolor;
+    text-transform: uppercase;
+    letter-spacing: 3vw;
+    line-height: 1.2;
+    font-size: 3vw;
+    text-align: center;
+
+    span {
+      display: block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 10vw;
+      letter-spacing: -0.7vw;
+      color: $accentcolor;
+    }
   }
 }
 
