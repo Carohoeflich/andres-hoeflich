@@ -1,0 +1,42 @@
+.nav {
+    position: fixed;
+    z-index: 90;
+
+    & .menu {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 10px 20px;
+
+        & a {
+            text-decoration: none;
+            transition: .5s ease;
+            color: $graycolor;
+        }
+
+        & li {
+            display: block;
+            margin: 20px;
+            letter-spacing: .3vw;
+            text-transform: uppercase;
+            transition: .5 ease;
+            &:hover a{
+                color: $accentcolor;
+            }
+            &.active {
+                border-bottom: 2px solid $accentcolor;
+                & a {
+                    color: $accentcolor;
+                }
+            }
+        }
+    }
+}
+
+#fp-nav ul li a span {
+    background: $accentcolor;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: $secondarycolor;
+}
