@@ -11,4 +11,5 @@ menu: '#menu',
 anchors: ['home', 'about', 'shop', 'contact'],
 navigationTooltips:['Home', 'About', 'Shop', 'Contact'],
 showActiveTooltip: false,
+setResponsive: true,
 });
