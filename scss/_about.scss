@@ -7,7 +7,7 @@
          height: 100vh;
          object-fit: cover;
          position: relative;
-         animation: about-img 2s ease-in;
+         /* animation: about-img 2s ease-in; */
      }
  }
 
@@ -42,7 +42,8 @@
      }
  }
 
- @keyframes about-img {
+
+ /* @keyframes about-img {
      0% {transform: translateX(100%);}
      100% {transform: translateX(0%);}
- };
+ }; */
