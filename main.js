@@ -1,7 +1,8 @@
 const pagesSections = new fullpage('#fullpage', {
-    autoScrolling: true,
+    autoScrolling: false,
     scrollingSpeed: 700,
-    fitToSection: false,
+    fitToSection: true,
+    fitToSectionDelay: 100,
     easing: 'easeInOutCubic',
     css3: true,
     easingcss3: 'ease-out',
@@ -13,6 +14,19 @@ const pagesSections = new fullpage('#fullpage', {
     showActiveTooltip: false,
     setResponsive: true,
 });
+
+let tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".about",
+        start: "-50%",
+        end: "0%",
+        scrub: 2,
+    },
+});
+
+tl.fromTo(".about-imagen", { x: 600 }, { x: 100 });
+
+
 
 
 /* I tried to only execute css animation when either on click about or BE in about page */
@@ -43,14 +57,22 @@ document.getElementById('#about').click(function () {
 }); */
 
 
+/* const about = document.getElementById('#about')
+const anim = document.getElementsById('#imgan').style.animation = "about-img 2s ease-in"; */
+/* document.styleSheets[0].insertRule("@keyframes about-img {\
+    from {transform: translateX(100%);}\
+    to {transform: translateX(0%);}\
+}"
+); */
 
-/* const isAbout = true;
-do {
-   KeyframeEffect(about-img)
+/* do {
+   anim
 } while (test)
 
 function test(){
-    if(isAbout === true){
-       to == document.getElementById('#about')
+    if(window.location === about){
+       about.addEventListener.anchors['about']
     }
-}; */
+};
+
+ */
