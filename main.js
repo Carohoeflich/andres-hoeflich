@@ -1,6 +1,7 @@
 const pagesSections = new fullpage('#fullpage', {
     autoScrolling: false,
     scrollingSpeed: 700,
+    scrollOverflow: true,
     fitToSection: true,
     fitToSectionDelay: 100,
     easing: 'easeInOutCubic',
@@ -19,12 +20,13 @@ let tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".about",
         start: "-50%",
-        end: "0%",
-        scrub: 2,
+        end: "-50%",
+        scrub: 1,
     },
 });
 
-tl.fromTo(".about-imagen", { x: 600 }, { x: 100 });
+tl.fromTo(".about-imagen", { x: 600 }, { x: 100 })
+tl.fromTo('.about-titulo', {opacity:0}, {opacity:1});
 
 
 
