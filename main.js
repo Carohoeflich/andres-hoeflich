@@ -16,6 +16,17 @@ const pagesSections = new fullpage('#fullpage', {
     setResponsive: true,
 });
 
+/* ======= GSAP TEXT ANIMATION FOR THE LANDING PAGE ======== */
+
+gsap.defaults({ease: "none"});
+const tlTexto = gsap.timeline({
+    repeat:Infinity,
+    repeatDelay:1,
+});
+tlTexto.to(".titulo p", {duration: 2, text:"Singer. Songwriter. Producer."})
+
+ /* ======= GSAP ANIMATION FOR THE ABOUT SECTION =========*/
+
 let tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".about",
