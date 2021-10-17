@@ -17,12 +17,27 @@ const pagesSections = new fullpage('#fullpage', {
 
 /* I tried to only execute css animation when either on click about or BE in about page */
 
+/* const about = document.getElementsById('#about');
+
+about.addEventListener("click", function(){
+    about.style.animation = "about-img 2s ease-in";
+});
+
+ */
+/* const animation = document.getElementById('about');
+
+function () {
+animation.onclick('.style.animation=start')
+};
+ */
+
 /* document.getElementById('#about').PageTransitionEvent(start) */
 
-/* function start() {
+ /* function start() {
     document.getElementsById('.#imgan').classList.add("about-img");
-}
+} */
 
+/*
 document.getElementById('#about').click(function () {
     document.getElementById('#imgan').show("slow", start)
 }); */
