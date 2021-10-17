@@ -11,5 +11,10 @@
     margin: 0;
     z-index: 2;
     font-family:'Poppins', sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
