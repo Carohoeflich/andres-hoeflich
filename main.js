@@ -20,12 +20,12 @@ let tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".about",
         start: "-50%",
-        end: "-50%",
+        end: "0%",
         scrub: 1,
     },
 });
 
-tl.fromTo(".about-imagen", { x: 600 }, { x: 100 })
+tl.fromTo(".about-imagen", { x: 600 }, { x: 30 })
 tl.fromTo('.about-titulo', {opacity:0}, {opacity:1});
 
 
