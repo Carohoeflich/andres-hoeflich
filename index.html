@@ -18,7 +18,7 @@
 
 <body>
   <nav class="nav">
-    <ul id="menu" class="menu">
+    <ul id="myMenu" class="menu">
       <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
       <li data-menuanchor="about" class="active"><a href="#about">About</a></li>
       <li data-menuanchor="music" class="active"><a href="#music">Music</a></li>
@@ -26,7 +26,9 @@
     </ul>
   </nav>
   <main id="fullpage">
+    
     <header class="section header">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
       <div class="titulo">
         <h1>
           Andrés
@@ -59,7 +61,7 @@
     <section class="section music">
       <h1></h1>
       <div id="aplayer"></div>
-      <p><a target="_blank" href="https://open.spotify.com/artist/1GzN3c6dFS7P8fCgIskBWt?si=exxkjjVZQ4ig7vSmIIBG6g"><img src="/img/spotifyicon.png" alt=""></a>Open his profile on Spotify!</p>
+      <p><a target="_blank" href="https://open.spotify.com/artist/1GzN3c6dFS7P8fCgIskBWt?si=exxkjjVZQ4ig7vSmIIBG6g"><img src="/img/spotifyicon.png" alt="">Open his profile on Spotify!</a></p>
       <div class="wave">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
@@ -69,16 +71,17 @@
     <footer class="section contact">CONTACT</footer>
   </main>
 
+  
   <!--------- GSAP --------->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js" integrity="sha512-eS29LjjTKq7Zq4U0fnDyvDoX5YBSIpl+EVb/sAprlYoaqIa+Q2SrfKL5xy6wQiiSDXduHx1xx2a5PTeP799hTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Fullpage.js JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"
-    integrity="sha512-GgeYbSbIufsTDQLCp/zhWN2AJRddt3w9p942+lOS5emAtvRBGo65t2zq8Svq+CIZIo1V1DgA6kHzQTBCH0HiXQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Aplyer JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+    <!-- Fullpage.js JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"
+  integrity="sha512-GgeYbSbIufsTDQLCp/zhWN2AJRddt3w9p942+lOS5emAtvRBGo65t2zq8Svq+CIZIo1V1DgA6kHzQTBCH0HiXQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- MY JAVASCRIPT -->
   <script src="/main.js"></script>
 </body>
