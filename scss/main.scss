@@ -4,10 +4,20 @@
 .music{
     position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     color: $secondarycolor;
     background-color: $primarycolor;
+    & img{
+        width: 35px;
+        height: 35px;
+        margin: 0 5px;
+    }
+    & p{
+        position: relative;
+        left: 43vw;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .contact{

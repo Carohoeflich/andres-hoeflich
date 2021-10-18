@@ -39,8 +39,25 @@ let tl = gsap.timeline({
 tl.fromTo(".about-imagen", { x: 600 }, { x: 30 })
 tl.fromTo('.about-titulo', {opacity:0}, {opacity:1});
 
+/* ======= GSAP TEXT ANIMATION FOR THE MUSIC PAGE ======= */
 
+gsap.defaults({ease: "none"});
+const tlMusic = gsap.timeline({
+    repeatDelay:1,
+});
 
+tlMusic.to(".music h1", {duration: 2, text: "Check out some of his music!"})
+
+/* ======== CODE FOR THE APLAYER ON MUSIC PAGE ========= */
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    audio: [{
+        name: 'La Cura',
+        artist: 'Andrés Hoeflich',
+        url: '/lacura.mp3',
+        cover: '/img/aplayercover.jpg'
+    }]
+});
 
 /* I tried to only execute css animation when either on click about or BE in about page */
 
