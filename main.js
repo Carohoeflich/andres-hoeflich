@@ -29,16 +29,6 @@ new fullpage('#fullpage', {
             duration: 2,
             text: "Check out some of his music!"
         });
-
-        /* const ap = new APlayer({
-            container: document.getElementById('aplayer'),
-            audio: [{
-                name: 'La Cura',
-                artist: 'Andrés Hoeflich',
-                url: '/lacura.mp3',
-                cover: '/img/aplayercover.jpg'
-            }]
-        }); */
     },
     afterLoad: function (origin, destination) {
         if (destination.anchor == 'about') {
