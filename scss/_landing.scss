@@ -1,6 +1,6 @@
 .header {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   & .container-scroll {
     z-index: 90;
     position: absolute;
@@ -23,6 +23,17 @@
       text-decoration: none;
       font-size: 14px;
       color: $secondarycolor;
+    }
+  }
+}
+
+@media (max-width:1024px){
+  .header{
+    & p{
+      display: flex;
+      justify-content: center;
+      opacity: .5;
+      font-size: 1.5rem;
     }
   }
 }

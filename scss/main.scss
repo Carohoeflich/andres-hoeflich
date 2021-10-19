@@ -1,30 +1,6 @@
 @import 'reset', 'variables', 'landing', 'navbar', 'about', 'music';
 
 
-.music{
-    position: relative;
-    display: flex;
-    align-items: center;
-    color: $secondarycolor;
-    background-color: $primarycolor;
-    & img{
-        width: 35px;
-        height: 35px;
-        margin: 0 5px;
-    }
-    & p{
-        position: relative;
-        left: 43vw;
-        display: flex;
-        align-items: center;
-    }
-    & a{
-        text-decoration: none;
-        align-items: center;
-        display: flex;
-        color: $secondarycolor;
-    }
-}
 
 .contact{
     background: linear-gradient(to top, #cecece, #f8f8f8);

@@ -1,6 +1,7 @@
  .about-container {
-     display: flex;
      background: linear-gradient(to top, #cecece, #f8f8f8);
+     width: 100%;
+     display: flex;
 
      & img {
          width: 100vw;
@@ -8,6 +9,19 @@
          object-fit: cover;
          position: relative;
          /* animation: about-img 2s ease-in; */
+     }
+ }
+
+ @media (max-width:1024px){
+     .about-container{
+         display: flex;
+         flex-direction: column;
+         & img{
+             width: 400px;
+             height: 600px;
+             margin: auto;
+             border-radius: 400px;
+         }
      }
  }
 
@@ -42,6 +56,20 @@
      }
  }
 
+
+ @media (max-width:1024px){
+     .about-titulo{
+         line-height: 7vw;
+         & h1 {
+             margin: 0 4vh;
+         }
+         & p{
+             margin: 0;
+             padding: 0 20px;
+             font-size: 20px;
+         }
+     }
+ }
 
  @keyframes about-img {
      0% {transform: translateX(100%);}
