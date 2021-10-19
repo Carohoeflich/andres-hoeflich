@@ -1,7 +1,19 @@
 @import 'reset', 'variables', 'landing', 'navbar', 'about', 'music';
 
 
+@media(max-width:768px) {
+    video {
+        display: none;
+    }
 
-.contact{
+    .overlay {
+            background: url(/img/andresfondonegro.jpg);
+            object-fit: cover;
+        }
+    }
+
+;
+
+.contact {
     background: linear-gradient(to top, #cecece, #f8f8f8);
 }
