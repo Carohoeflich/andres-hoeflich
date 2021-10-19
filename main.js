@@ -1,19 +1,14 @@
-const pagesSections = new fullpage('#fullpage', {
+new fullpage('#fullpage', {
     autoScrolling: false,
     scrollingSpeed: 700,
-    scrollOverflow: true,
+    scrollOverflow: false,
     fitToSection: true,
-    fitToSectionDelay: 300,
-    easing: 'easeInOutCubic',
-    css3: true,
-    easingcss3: 'ease-out',
-    loopBottom: true,
+    fitToSectionDelay: 200,
     navigation: true,
-    menu: '#myMenu',
     anchors: ['home', 'about', 'music', 'contact'],
+    menu: '#menu',
     navigationTooltips: ['Home', 'About', 'Music', 'Contact'],
     showActiveTooltip: false,
-    isResponsive: true,
     afterRender: function () {
         gsap.defaults({
             ease: "none"
@@ -35,7 +30,7 @@ const pagesSections = new fullpage('#fullpage', {
             text: "Check out some of his music!"
         });
 
-        const ap = new APlayer({
+        /* const ap = new APlayer({
             container: document.getElementById('aplayer'),
             audio: [{
                 name: 'La Cura',
@@ -43,7 +38,7 @@ const pagesSections = new fullpage('#fullpage', {
                 url: '/lacura.mp3',
                 cover: '/img/aplayercover.jpg'
             }]
-        });
+        }); */
     },
     afterLoad: function (origin, destination) {
         if (destination.anchor == 'about') {
