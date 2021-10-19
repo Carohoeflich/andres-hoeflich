@@ -16,6 +16,7 @@
         position: relative;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     & a{
         text-decoration: none;
@@ -35,7 +36,7 @@ h1 {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     line-height: 0;
     object-fit: cover;
 }
@@ -43,18 +44,19 @@ h1 {
 .wave svg {
     position: relative;
     display: block;
-    width: calc(100vw + 1.3px);
+    width: 100%;
     height: 238px;
 }
 
 .wave .shape-fill {
     fill: #EAEE0F;
+    width: 100%;
 }
 
 /** For mobile devices **/
-@media (max-width: 767px) {
+@media (max-width: 320px) {
     .wave svg {
-        width: calc(157% + 1.3px);
+        width:100%;
         height: 238px;
     }
 }

@@ -1,6 +1,7 @@
 .nav {
     position: fixed;
     z-index: 90;
+    width: 100%;
 
     & .menu {
         display: flex;
@@ -15,10 +16,11 @@
 
         & li {
             display: block;
-            margin: 20px;
+            margin: 10px;
             letter-spacing: .3vw;
             text-transform: uppercase;
             transition: .5 ease;
+            width: 100%;
             &:hover a{
                 color: $accentcolor;
             }

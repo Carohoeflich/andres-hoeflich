@@ -34,6 +34,7 @@ const pagesSections = new fullpage('#fullpage', {
             duration: 2,
             text: "Check out some of his music!"
         });
+
         const ap = new APlayer({
             container: document.getElementById('aplayer'),
             audio: [{
