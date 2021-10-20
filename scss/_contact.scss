@@ -1,9 +1,11 @@
 .contact-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
     position: absolute;
-    top:0;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
+    top: 10vh;
     &.left{
         text-align: center;
     }
@@ -14,10 +16,11 @@
 
 img {
     .left & {
+
             width: 50vw;
             height: 40vh;
             object-fit: cover;
-            position: relative;
+            position: absolute;
             top: 0;
            }
     }
@@ -26,8 +29,23 @@ img {
         .right & {
                 width: 50vw;
                 height: 40vh;
+                position: absolute;
                 object-fit: cover;
-                position: relative;
                 bottom: 0;
+                right: 0;
                }
         }
+
+
+p {
+    .left & {
+        font-size: 20px;
+        position: relative;
+        margin-top: 50vh;
+    }
+
+    .right & {
+        font-size: 20px;
+        padding: 10px 40px;
+    }
+}
