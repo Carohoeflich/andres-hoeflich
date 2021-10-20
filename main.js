@@ -1,9 +1,9 @@
 new fullpage('#fullpage', {
-    autoScrolling: false,
     scrollingSpeed: 700,
     scrollOverflow: false,
     fitToSection: true,
     fitToSectionDelay: 200,
+    loopBottom: true,
     navigation: true,
     anchors: ['home', 'about', 'music', 'contact'],
     menu: '#menu',

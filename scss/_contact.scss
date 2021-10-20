@@ -1,0 +1,33 @@
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: absolute;
+    top:0;
+    height: 100%;
+    &.left{
+        text-align: center;
+    }
+    &.right{
+        text-align: center;
+    }
+}
+
+img {
+    .left & {
+            width: 50vw;
+            height: 40vh;
+            object-fit: cover;
+            position: relative;
+            top: 0;
+           }
+    }
+
+    img {
+        .right & {
+                width: 50vw;
+                height: 40vh;
+                object-fit: cover;
+                position: relative;
+                bottom: 0;
+               }
+        }
