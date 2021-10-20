@@ -8,43 +8,73 @@
     top: 10vh;
     &.left{
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
     &.right{
         text-align: center;
     }
 }
 
-img {
-    .left & {
 
-            width: 50vw;
-            height: 40vh;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-           }
+.left-img{
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    & img {
+        width: 50vw;
+        height: 50vh;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
     }
-
-    img {
-        .right & {
-                width: 50vw;
-                height: 40vh;
-                position: absolute;
-                object-fit: cover;
-                bottom: 0;
-                right: 0;
-               }
-        }
-
-
-p {
-    .left & {
+    & p {
         font-size: 20px;
         position: relative;
         margin-top: 50vh;
     }
+    & h1 {
+        margin-top: 60vh;
+    }
+}
 
-    .right & {
+.iconos{
+    position: relative;
+    top: 60vh;
+    text-align: center;
+    & img {
+        width: 50px;
+        height: 50px;
+        &:hover{
+            background-color: $accentcolor;
+            border-radius: 50%;
+        }
+    }
+}
+
+@media (max-width:1024px){
+    .iconos{
+        position: relative;
+        & img {
+            width: 30px;
+            height: 30px;
+    }
+}
+}
+
+.right-img{
+    & img{
+        width: 50vw;
+                height: 50vh;
+                position: absolute;
+                object-fit: cover;
+                bottom: 0;
+                right: 0;
+    }
+}
+
+.contact-forms{
+    & P{
         font-size: 20px;
         padding: 10px 40px;
     }
