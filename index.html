@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css"
     integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Stylesheet -->
   <link rel="stylesheet" href="/css/main.css">
   <title>Andrés Hoeflich</title>
@@ -56,10 +60,36 @@
     </section>
 
     <section class="section music">
-      <audio id="song">
-        <source src="/Main/media/lacura.mp3" type="audio/mp3">
-      </audio>
       <h1></h1>
+      <div class="music-container">
+        <div class="music-info">
+            <h4 id="titulo">La Cura</h4>
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+
+        <div class="img-container">
+            <img src="/Main/img/aplayercover.jpg" alt="music-cover">
+        </div>
+
+        <div class="navigation">
+            <button id="play" class="action-btn">
+                <i class="fas fa-play"></i>
+            </button>
+
+            <div class="volume-progress-container">
+                <div class="volume-progress"></div>
+            </div>
+
+            <button id=volume class="action-btn">
+                <i class="fas fa-volume-up"></i>
+                <input id=volumeInput type="range">
+            </button>
+        </div>
+
+    </div>
       <p><a target="_blank" href="https://open.spotify.com/artist/1GzN3c6dFS7P8fCgIskBWt?si=exxkjjVZQ4ig7vSmIIBG6g"><img src="/Main/img/Iconos/spotifyicon.png" alt="">Open his profile on Spotify!</a></p>
       <div class="wave">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
