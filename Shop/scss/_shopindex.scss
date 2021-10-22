@@ -1,26 +1,32 @@
-.nav{
+.nav {
     display: flex;
     align-items: center;
+    top: 0;
 
 }
 
-.nav2{
+.nav2 {
     flex: 1;
     text-align: right;
-    & ul{
+
+    & ul {
         display: inline-block;
         list-style-type: none;
-        & li{
+
+        & li {
             display: inline-block;
             margin: 10px 20px;
-            & a{
+
+            & a {
                 text-decoration: none;
                 color: $primarycolor;
                 text-transform: uppercase;
-                &:hover{
+
+                &:hover {
                     background-color: $accentcolor;
                 }
-                & img{
+
+                & img {
                     width: 20px;
                     height: 20px;
                 }
@@ -29,14 +35,13 @@
     }
 }
 
-.slide{
-    width: 100vw;
-    height: 100vh;
+.slide {
     background-color: $primarycolor;
     z-index: 9;
-    opacity: 1;
+    width: 100vw;
+    height: 100vh;
 }
 
-.animate__slideOutUp{
-    animation-duration: 2s;
+.animate__slideOutUp {
+    animation-duration: 3s;
 }
