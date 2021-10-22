@@ -35,7 +35,16 @@ new fullpage('#fullpage', {
             document.querySelector('.about-container img');
         }
     },
+    /* function () { // didnt work
+        let customQuery =
+            ResponsiveKnockoutUtils.createMediaQueryObservable('(min-width: 320px)');
+        if (customQuery) {
+            fitToSection: false
+        }
+    }, */
 });
+
+
 
 /* ======== MY MUSIC PLAYER ========= */
 
