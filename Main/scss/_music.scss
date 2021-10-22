@@ -1,0 +1,62 @@
+#aplayer{
+    margin: 0 35vw;
+    background-color: $primarycolor;
+}
+
+.music{
+    align-items: center;
+    color: $secondarycolor;
+    background-color: $primarycolor;
+    & img{
+        width: 35px;
+        height: 35px;
+        margin: 0 5px;
+    }
+    & p{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    & a{
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        color: $secondarycolor;
+    }
+}
+
+h1 {
+    position: relative;
+    bottom: 10vh;
+    text-align: center;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    object-fit: cover;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 238px;
+}
+
+.wave .shape-fill {
+    fill: #EAEE0F;
+    width: 100%;
+}
+
+/** For mobile devices **/
+@media (max-width: 320px) {
+    .wave svg {
+        width:100%;
+        height: 238px;
+    }
+}

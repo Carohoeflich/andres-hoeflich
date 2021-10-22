@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fullpage.js CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css"
+    integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/main.css">
+  <title>Andrés Hoeflich</title>
+</head>
+<nav class="nav">
+  <ul id="menu" class="menu">
+    <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+    <li data-menuanchor="about" class="active"><a href="#about">About</a></li>
+    <li data-menuanchor="music" class="active"><a href="#music">Music</a></li>
+    <li data-menuanchor="contact" class="active"><a href="#contact">Contact</a></li>
+    <li class="active"><a href="/Shop/shop.html">Shop</a></li>
+  </ul>
+</nav>
+<body>
+  <main id="fullpage">
+    <header class="section header">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <div class="titulo">
+        <h1>
+          Andrés
+          <span>Hoeflich</span>
+        </h1>
+        <p></p>
+      </div>
+      <div class="container-scroll">
+        <p><a href="#about">Scroll<img src="/Main/img/Mouse_Scroll.png" alt=""></a></p>
+      </div>
+      <!-- VIDEO -->
+      <video loop data-autoplay muted class="bg-video">
+        <source src="/Main/media/LaCuraCorto.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+    </header>
+    <!-- ABOUT ME SECTION -->
+    <section class="section about">
+      <div class="about-container">
+        <div class="about-text">
+          <div class="about-titulo">
+            <h1> <span> Andrés </span> Hoeflich</h1>
+            <p>In early years, at the age of 15, he developed his musical career, getting involved with many bands of different musical genres, but it was not until his 20s when he moved to Mexico City, where he created his musical style in rock, electronics, and trip hop influencing the city's underground scene. <br> In 2017 he had the opportunity to win a national band contest with his then band Modoaural, that event led him to share stages with world-class talent and international festivals. <br> After the disintegration of Modoaural in 2019, he began his solo career where he proposed a full band format with guest musicians and various intruments that make a mix of Rock, Dj set and Jazz. <br> His first solo single "La Cura" had great public acceptance followed by the release of his debut album "En la marea" released in 2021. <br> He is currently trying to establish himself as a fresh and new proposal for independent music in México and the world. </p>
+          </div>
+        </div>
+        <img id="imgan" class="about-imagen" src="/Main/img/andreslentes2.png" alt="">
+      </div>
+    </section>
+
+    <section class="section music">
+      <audio id="song">
+        <source src="/Main/media/lacura.mp3" type="audio/mp3">
+      </audio>
+      <h1></h1>
+      <p><a target="_blank" href="https://open.spotify.com/artist/1GzN3c6dFS7P8fCgIskBWt?si=exxkjjVZQ4ig7vSmIIBG6g"><img src="/Main/img/Iconos/spotifyicon.png" alt="">Open his profile on Spotify!</a></p>
+      <div class="wave">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    </section>
+    <footer class="section contact">
+      <div class="contact-container">
+        <div class="left">
+          <div class="left-img">
+          <img src="/Main/img/andresdime.jpg" alt="">
+          <p><h1>Find me on:</h1></p></div>
+          <div class="iconos">
+           <a href="https://www.facebook.com/andreshoeflich"><img src="/Main/img/Iconos/facebook.svg" alt=""></a><a href="https://www.instagram.com/andreshoeflich"><img src="/Main/img/Iconos/instagram.svg" alt=""></a><a href="https://twitter.com/andreshoeflich"><img src="/Main/img/Iconos/twitter.svg" alt=""></a><a href="https://open.spotify.com/artist/1GzN3c6dFS7P8fCgIskBWt?si=exxkjjVZQ4ig7vSmIIBG6g"><img src="/Main/img/Iconos/spotify.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="right">
+          <div class="contact-forms">
+          <div class="wrapper">
+            <h2>MESSAGE ME</h2>
+            <form action="" method="POST">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" name="Name" id="name" placeholder="Input your name here" required minlength="3" maxlength="25" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" name="Email" id="email" placeholder="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="Message" id="message" rows="5" placeholder="Type your message here...."></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="submit"><i class="far fa-paper-plane"></i>Send</button>
+              </div>
+            </form>
+          </div></div>
+          <div class="right-img">
+          <img src="/Main/img/andresfondonegro.jpg" alt=""></div>
+        </div>
+      </div>
+    </footer>
+
+
+  </main>
+
+
+  <!--------- GSAP --------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js" integrity="sha512-eS29LjjTKq7Zq4U0fnDyvDoX5YBSIpl+EVb/sAprlYoaqIa+Q2SrfKL5xy6wQiiSDXduHx1xx2a5PTeP799hTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Fullpage.js JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"
+  integrity="sha512-GgeYbSbIufsTDQLCp/zhWN2AJRddt3w9p942+lOS5emAtvRBGo65t2zq8Svq+CIZIo1V1DgA6kHzQTBCH0HiXQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- MY JAVASCRIPT -->
+  <script src="/Main/main.js"></script>
+</body>
+
+</html>

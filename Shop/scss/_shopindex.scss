@@ -1,0 +1,42 @@
+.nav{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav2{
+    flex: 1;
+    text-align: right;
+    & ul{
+        display: inline-block;
+        list-style-type: none;
+        & li{
+            display: inline-block;
+            margin: 10px 20px;
+            & a{
+                text-decoration: none;
+                color: $primarycolor;
+                text-transform: uppercase;
+                &:hover{
+                    background-color: $accentcolor;
+                }
+                & img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+.slide{
+    width: 100vw;
+    height: 100vh;
+    background-color: $primarycolor;
+    z-index: 9;
+    opacity: 1;
+}
+
+.animate__slideOutUp{
+    animation-duration: 2s;
+}
