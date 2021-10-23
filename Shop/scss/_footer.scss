@@ -1,7 +1,9 @@
 footer {
     text-align: center;
+    bottom: 0;
     color: $secondarycolor;
     background-color: $primarycolor;
+    height: 200px;
     & img{
         width: 30px;
         height: 30px;
