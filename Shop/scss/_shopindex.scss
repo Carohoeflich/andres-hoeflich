@@ -8,6 +8,9 @@
 .nav2 {
     flex: 1;
     text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
 
     & ul {
         display: inline-block;
@@ -19,16 +22,21 @@
 
             & a {
                 text-decoration: none;
-                color: $primarycolor;
+                color: $secondarycolor;
                 text-transform: uppercase;
 
                 &:hover {
-                    background-color: $accentcolor;
+                    color: $accentcolor;
                 }
 
                 & img {
+                    align-items: center;
+                    vertical-align: middle;
                     width: 20px;
                     height: 20px;
+                    &:hover{
+                        filter: invert(69%) sepia(92%) saturate(432%) hue-rotate(13deg) brightness(1112%) contrast(96%);
+                    }
                 }
             }
         }
@@ -50,5 +58,52 @@
 }
 
 h1{
+    margin-bottom: 5vh;
     font-size: 40px;
+}
+
+.col-2{
+    min-width: 300px;
+    align-items: center;
+    margin-left: auto;
+    & img {
+        width: 30vw;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    & button {
+        margin-top: 20px;
+        padding: 10px;
+        outline: 0;
+        width: 150px;
+        background-color: $primarycolor;
+        border:none;
+        animation-duration: 7s;
+        & a{
+            text-decoration: none;
+            color: $accentcolor;
+        }
+    }
+}
+
+
+.wave {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -2;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(162% + 1.3px);
+    height: 184px;
+}
+
+.wave .shape-fill {
+    fill: $primarycolor;
 }
