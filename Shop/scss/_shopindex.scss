@@ -71,17 +71,19 @@ h1{
         object-fit: cover;
         border-radius: 50%;
     }
-    & button {
-        margin-top: 20px;
-        padding: 10px;
-        outline: 0;
-        width: 150px;
-        background-color: $primarycolor;
-        border:none;
-        animation-duration: 7s;
-        & a{
-            text-decoration: none;
+    & a{
+        text-decoration: none;
+        font-size: 25px;
+        & button {
+            cursor: pointer;
             color: $accentcolor;
+            margin-top: 20px;
+            padding: 10px;
+            outline: 0;
+            width: 150px;
+            background-color: $primarycolor;
+            border:none;
+            animation-duration: 7s;
         }
     }
 }
