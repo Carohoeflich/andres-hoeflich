@@ -7,3 +7,4 @@ slideAnimation.addEventListener('animationend', () => {
   slideAnimation.style.width = "0vw";
   slideAnimation.style.height = "0vh";
 });
+
