@@ -4,6 +4,7 @@
     min-width: 200px;
     margin-bottom: 50px;
     align-items: center;
+    transition: transform .5s;
 
     & img {
         width: 100%;
@@ -11,6 +12,9 @@
     & P {
         font-size: 14px;
         text-align: center;
+    }
+    &:hover{
+        transform: translateY(5px);
     }
 }
 
