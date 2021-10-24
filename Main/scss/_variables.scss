@@ -2,3 +2,12 @@ $primarycolor: #000;
 $secondarycolor: #fff;
 $accentcolor:rgb(234, 238, 15);
 $graycolor: rgb(158, 157, 157);
+
+
+$breakpoints: (xsm:320px, sm : 540px, md : 768px, lg : 1024px, xlg: (min($numbers: 1025px))); //map for breakpoints
+
+@mixin media-up($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint ) ){
+        @content;
+    }
+}
