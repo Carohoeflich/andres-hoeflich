@@ -1,12 +1,14 @@
 new fullpage('#fullpage', {
     scrollingSpeed: 700,
-    scrollOverflow: false,
     fitToSection: true,
     fitToSectionDelay: 200,
     loopBottom: true,
     navigation: true,
     anchors: ['home', 'about', 'music', 'contact'],
     menu: '#menu',
+    responsiveWidth: 320,
+	responsiveHeight: 661,
+    css3: false,
     navigationTooltips: ['Home', 'About', 'Music', 'Contact'],
     showActiveTooltip: false,
     afterRender: function () {
@@ -33,12 +35,6 @@ new fullpage('#fullpage', {
     afterLoad: function (origin, destination) {
         if (destination.anchor == 'about') {
             document.querySelector('.about-container img');
-        }
-    },
-    function () { // didnt work
-        let customQuery = ResponsiveKnockoutUtils.createMediaQueryObservable('(min-width: 320px)');
-        if (customQuery) {
-            fitToSection: false
         }
     },
 });
@@ -127,7 +123,6 @@ window.onload = function () {
 
     audio.addEventListener('timeupdate', updateProgress)
     progressContainer.addEventListener('click', setProgress)
-    volumenProgress.addEventListener('click', setVolumen)
 
 }
 
