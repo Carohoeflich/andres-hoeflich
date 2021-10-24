@@ -50,12 +50,15 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    animation-duration: 4s;
     }
 }
 
-.animate__fadeOutUpBig {
-    animation-duration: 1s;
+button {
+    animation-duration: 2s;
 }
+
+
 
 h1{
     margin-bottom: 5vh;
