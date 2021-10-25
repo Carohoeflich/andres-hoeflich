@@ -2,25 +2,25 @@ $breakpoints: (phone:320px, tablet : 768px, desktop : 1024px, LGdesktop: 1920px)
 //mix ins for each breakpoints
 
 @mixin phone {
-    @media (min-width: map-get($breakpoints, 'phone' )){
+    @media (max-width: map-get($breakpoints, 'phone' )){
         @content;
     }
 }
 
 @mixin tablet {
-    @media (min-width: map-get($breakpoints, 'tablet')) {
+    @media (max-width: map-get($breakpoints, 'tablet')) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media (min-width: map-get($breakpoints, 'desktop')) {
+    @media (max-width: map-get($breakpoints, 'desktop')) {
         @content;
     }
 }
 
 @mixin LGdesktop {
-    @media (min-width: map-get($breakpoints, 'LGdesktop')) {
+    @media (max-width: map-get($breakpoints, 'LGdesktop')) {
         @content;
     }
 }
@@ -29,10 +29,10 @@ $breakpoints: (phone:320px, tablet : 768px, desktop : 1024px, LGdesktop: 1920px)
 //Music Section Responsiveness
 /***** End Section *****/
 
-@include phone {
+@include tablet {
 .music{
     & p {
-        bottom: 12px;
+        top: 40px;
     }
 }
 
@@ -57,7 +57,7 @@ $breakpoints: (phone:320px, tablet : 768px, desktop : 1024px, LGdesktop: 1920px)
 // Landing page
 /***** End Section *****/
 
-/* @include tablet {
+@include tablet {
     video {
         display: none;
     }
@@ -66,4 +66,120 @@ $breakpoints: (phone:320px, tablet : 768px, desktop : 1024px, LGdesktop: 1920px)
             background: url(/Main/img/andresfondonegro.jpg);
             object-fit: cover;
         }
-} */
+}
+
+
+/***** Section *****/
+    // About Section
+/***** End Section *****/
+
+@include phone {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+
+        & img {
+            width: 100px;
+            height: 200px;
+            margin: auto;
+            border-radius: 30%;
+        }
+    }
+
+    .about-titulo {
+        margin-top: 20vh;
+        line-height: 0;
+
+        & h1 {
+            display: flex;
+            font-size: 20px;
+            color: $primarycolor;
+            text-align: center;
+            justify-content: center;
+            border-bottom: none;
+        }
+
+        & span {
+            font-size: 20px;
+            color: $primarycolor;
+            margin-right: 5px;
+        }
+
+        & p {
+            font-size: 10px;
+            margin-top: 0;
+            padding: 0;
+            padding: 0;
+        }
+    }
+}
+
+@include tablet {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+
+        & img {
+            width: 200px;
+            height: 300px;
+            margin: auto;
+            border-radius: 30%;
+        }
+    }
+
+    .about-titulo {
+        margin-top: 20vh;
+        line-height: 0;
+
+        & h1 {
+            display: flex;
+            font-size: 20px;
+            color: $primarycolor;
+            text-align: center;
+            justify-content: center;
+            border-bottom: none;
+        }
+
+        & span {
+            letter-spacing: 0;
+            font-size: 20px;
+            color: $primarycolor;
+            margin-right: 5px;
+        }
+
+        & p {
+            margin-top: 0;
+            padding: 0 15px;
+        }
+    }
+}
+
+@include desktop{
+    .about-titulo {
+        margin-top: 20vh;
+        line-height: 0;
+
+        & h1 {
+            display: flex;
+            font-size: 20px;
+            color: $primarycolor;
+            text-align: center;
+            justify-content: center;
+            border-bottom: none;
+        }
+
+        & span {
+            letter-spacing: 0;
+            font-size: 20px;
+            color: $primarycolor;
+            margin-right: 5px;
+        }
+
+        & p {
+            margin-top: 0;
+            padding: 0 5px;
+        }
+    }
+}
