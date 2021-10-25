@@ -1,0 +1,69 @@
+$breakpoints: (phone:320px, tablet : 768px, desktop : 1024px, LGdesktop: 1920px); //map for breakpoints
+//mix ins for each breakpoints
+
+@mixin phone {
+    @media (min-width: map-get($breakpoints, 'phone' )){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: map-get($breakpoints, 'tablet')) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: map-get($breakpoints, 'desktop')) {
+        @content;
+    }
+}
+
+@mixin LGdesktop {
+    @media (min-width: map-get($breakpoints, 'LGdesktop')) {
+        @content;
+    }
+}
+
+/***** Section *****/
+//Music Section Responsiveness
+/***** End Section *****/
+
+@include phone {
+.music{
+    & p {
+        bottom: 12px;
+    }
+}
+
+    .music-container {
+        width: 80vw;
+        left: 11vw;
+    }
+    .music-info{
+        top: 20px;
+    }
+
+}
+
+@include desktop() {
+    .wave svg {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+/***** Section *****/
+// Landing page
+/***** End Section *****/
+
+/* @include tablet {
+    video {
+        display: none;
+    }
+
+    .overlay {
+            background: url(/Main/img/andresfondonegro.jpg);
+            object-fit: cover;
+        }
+} */
