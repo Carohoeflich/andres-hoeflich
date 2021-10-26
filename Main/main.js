@@ -1,14 +1,11 @@
 new fullpage('#fullpage', {
-    scrollingSpeed: 700,
-    fitToSection: true,
-    fitToSectionDelay: 200,
+    autoScrolling: false,
+    fitToSection: false,
     loopBottom: true,
     navigation: true,
     anchors: ['home', 'about', 'music', 'contact'],
     menu: '#menu',
-    responsiveWidth: 320,
-	responsiveHeight: 661,
-    css3: false,
+    css3: true,
     navigationTooltips: ['Home', 'About', 'Music', 'Contact'],
     showActiveTooltip: false,
     afterRender: function () {
