@@ -29,17 +29,6 @@
   }
 }
 
-@media (max-width:1024px){
-  .header{
-    & p{
-      display: flex;
-      justify-content: center;
-      opacity: .5;
-      font-size: 1.5rem;
-    }
-  }
-}
-
 /* ========== animation of the scrolling icon ============== */
 @keyframes up-n-down {
   0% {
