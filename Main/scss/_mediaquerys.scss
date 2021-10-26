@@ -1,8 +1,14 @@
-$breakpoints: (phone:320px, tablet : 768px, desktop : 1024px, LGdesktop: 1920px); //map for breakpoints
+$breakpoints: (phone:320px, LGphone:425px, tablet : 768px, desktop : 1024px, LGdesktop: 1920px); //map for breakpoints
 //mix ins for each breakpoints
 
 @mixin phone {
-    @media (max-width: map-get($breakpoints, 'phone' )){
+    @media (max-width: map-get($breakpoints, 'phone')) {
+        @content;
+    }
+}
+
+@mixin LGphone {
+    @media (max-width: map-get($breakpoints, 'LGphone')) {
         @content;
     }
 }
@@ -30,17 +36,18 @@ $breakpoints: (phone:320px, tablet : 768px, desktop : 1024px, LGdesktop: 1920px)
 /***** End Section *****/
 
 @include tablet {
-.music{
-    & p {
-        top: 40px;
+    .music {
+        & p {
+            top: 40px;
+        }
     }
-}
 
     .music-container {
         width: 80vw;
         left: 11vw;
     }
-    .music-info{
+
+    .music-info {
         top: 20px;
     }
 
@@ -63,14 +70,25 @@ $breakpoints: (phone:320px, tablet : 768px, desktop : 1024px, LGdesktop: 1920px)
     }
 
     .overlay {
-            background: url(/Main/img/andresfondonegro.jpg);
-            object-fit: cover;
-        }
+        background: url(/Main/img/andresfondonegro.jpg);
+        object-fit: cover;
+    }
 }
+
+@include desktop{
+    .header{
+        & p{
+          display: flex;
+          justify-content: center;
+          opacity: .5;
+          font-size: 1.5rem;
+        }
+      }
+    }
 
 
 /***** Section *****/
-    // About Section
+// About Section
 /***** End Section *****/
 
 @include phone {
@@ -115,6 +133,56 @@ $breakpoints: (phone:320px, tablet : 768px, desktop : 1024px, LGdesktop: 1920px)
     }
 }
 
+@include LGPhone {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+
+        & img {
+            width: 200px;
+            height: 300px;
+            margin: auto;
+            border-radius: 30%;
+        }
+    }
+
+    .about-titulo {
+        margin: 0;
+        bottom: 10vh;
+        line-height: 0;
+        position: relative;
+
+        & h1 {
+            top: -1vh;
+            display: flex;
+            font-size: 20px;
+            color: $primarycolor;
+            text-align: center;
+            justify-content: center;
+            border-bottom: none;
+        }
+
+        & span {
+            letter-spacing: 0;
+            font-size: 20px;
+            color: $primarycolor;
+            margin-right: 5px;
+        }
+
+        & p {
+            font-size: 14px;
+            margin-top: 0;
+            padding: 0;
+        }
+    }
+
+    .about-text {
+        height: 70vh;
+    }
+}
+
+
 @include tablet {
     .about-container {
         display: flex;
@@ -156,7 +224,7 @@ $breakpoints: (phone:320px, tablet : 768px, desktop : 1024px, LGdesktop: 1920px)
     }
 }
 
-@include desktop{
+@include desktop {
     .about-titulo {
         margin-top: 20vh;
         line-height: 0;
@@ -180,6 +248,94 @@ $breakpoints: (phone:320px, tablet : 768px, desktop : 1024px, LGdesktop: 1920px)
         & p {
             margin-top: 0;
             padding: 0 5px;
+        }
+    }
+}
+
+/***** Section *****/
+// Contact me Section responsiveness
+/***** End Section *****/
+
+@include LGphone {
+
+    .wrapper {
+        position: absolute;
+        align-items: center;
+        width: 50vw;
+        height: 50vh;
+        background: $secondarycolor;
+        & h2 {
+          background: $accentcolor;
+          letter-spacing: 2px;
+          padding: 0;
+          cursor: default;
+          text-align: center;
+        }
+      }
+
+    .form-group{
+      & button {
+        font-weight: bold;
+        padding: 0;
+        border: none;
+        background: $accentcolor;
+        cursor: pointer;
+        transition: background 0.15s;
+        &:hover {
+          background: #fff;
+        }
+        & i {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .contact-container {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+
+        &.left {
+            grid-row: 1;
+        }
+
+        &.right {
+            grid-row: 2;
+        }
+    }
+
+    .iconos {
+        top: 10vh;
+        text-align: center;
+    }
+}
+
+@include desktop {
+    .contact-container {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+
+        &.left {
+            grid-row: 1;
+        }
+
+        &.right {
+            grid-row: 2;
+        }
+    }
+
+    .iconos {
+        position: relative;
+
+        & img {
+            width: 30px;
+            height: 30px;
         }
     }
 }
