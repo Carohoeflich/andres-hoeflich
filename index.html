@@ -5,11 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Fullpage.js CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css"
-    integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- animate css -->
+     <!-- animate css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         referrerpolicy="no-referrer" />
     <!-- FONTAWESOME -->
@@ -21,17 +17,17 @@
   <title>Andrés Hoeflich</title>
 </head>
 <nav class="nav">
-  <ul id="menu" class="menu">
-    <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-    <li data-menuanchor="about" class="active"><a href="#about">About</a></li>
-    <li data-menuanchor="music" class="active"><a href="#music">Music</a></li>
-    <li data-menuanchor="contact" class="active"><a href="#contact">Contact</a></li>
-    <li class="active"><a href="/Shop/shop.html">Shop</a></li>
+  <ul class="menu">
+    <li><a class="navTest " href="#home">Home</a></li>
+    <li><a class="navTest " href="#about">About</a></li>
+    <li><a class="navTest " href="#music">Music</a></li>
+    <li><a class="navTest " href="#contact">Contact</a></li>
+    <li><a href="/Shop/shop.html">Shop</a></li>
   </ul>
 </nav>
 <body>
-  <main id="fullpage">
-    <header class="section header">
+  <main >
+    <header id="home" class="section header">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <div class="titulo">
         <h1>
@@ -44,13 +40,13 @@
         <p><a href="#about">Scroll<img src="/Main/img/Mouse_Scroll.png" alt=""></a></p>
       </div>
       <!-- VIDEO -->
-      <video loop data-autoplay muted class="bg-video">
+      <video loop autoplay muted class="bg-video">
         <source src="/Main/media/LaCuraCorto.mp4" type="video/mp4">
       </video>
       <div class="overlay"></div>
     </header>
     <!-- ABOUT ME SECTION -->
-    <section class="section about">
+    <section id="about" class="section about">
       <div class="about-container">
         <div class="about-text">
           <div class="about-titulo">
@@ -62,7 +58,7 @@
       </div>
     </section>
 
-    <section class="section music">
+    <section id="music" class="section music">
       <h1></h1>
       <div class="music-container">
         <div class="music-info">
@@ -100,7 +96,8 @@
         </svg>
     </div>
     </section>
-    <section class="section contact">
+
+    <section id="contact" class="section contact">
       <div class="contact-container">
         <div class="left">
           <div class="left-img">
@@ -145,10 +142,6 @@
   <!--------- GSAP --------->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js" integrity="sha512-eS29LjjTKq7Zq4U0fnDyvDoX5YBSIpl+EVb/sAprlYoaqIa+Q2SrfKL5xy6wQiiSDXduHx1xx2a5PTeP799hTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Fullpage.js JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"
-  integrity="sha512-GgeYbSbIufsTDQLCp/zhWN2AJRddt3w9p942+lOS5emAtvRBGo65t2zq8Svq+CIZIo1V1DgA6kHzQTBCH0HiXQ=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- MY JAVASCRIPT -->
   <script src="/Main/main.js"></script>
 </body>
