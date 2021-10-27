@@ -1,1 +1,29 @@
 @import 'reset', 'variables', 'landing', 'navbar', 'about', 'music', 'contact', 'mediaquerys';
+
+
+.section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+}
+
+.nav{
+    position: fixed;
+    z-index: 100;
+    justify-content: space-between;
+    top: 3%;
+    opacity: 1;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translate3d(0,-50%,0);
+    & ul {
+        display: inline-block;
+    }
+}
+
+.navTest.active{
+    border-bottom: 2px solid $accentcolor;
+}
