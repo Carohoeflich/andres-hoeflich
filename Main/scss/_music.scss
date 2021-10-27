@@ -1,9 +1,6 @@
-#aplayer{
-    margin: 0 35vw;
-    background-color: $primarycolor;
-}
 
 .music{
+    padding: 50px 0;
     align-items: center;
     color: $secondarycolor;
     background-color: $primarycolor;
@@ -28,8 +25,9 @@
 
 h1 {
     position: relative;
-    bottom: 10vh;
     text-align: center;
+    padding: 50px 0;
+    font-size: 60px;
 }
 
 .wave {
@@ -160,10 +158,10 @@ h1 {
    opacity: 0;
 }
 
-/* @media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio:0) {
     input[type='range'] {
       overflow: hidden;
-      width: 80px;
+      width: 40px;
       -webkit-appearance: none;
       background-color: #000000;
       border-radius: 10px;
@@ -188,7 +186,7 @@ h1 {
       box-shadow: -80px 0 0 80px rgb(225, 238, 41);
     }
 
-} */
+}
 
 .navigation.volumen #volumeInput{
     opacity: 1;
