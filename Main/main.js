@@ -1,42 +1,38 @@
-new fullpage('#fullpage', {
-    autoScrolling: false,
-    fitToSection: false,
-    loopBottom: true,
-    navigation: true,
-    anchors: ['home', 'about', 'music', 'contact'],
-    menu: '#menu',
-    css3: true,
-    navigationTooltips: ['Home', 'About', 'Music', 'Contact'],
-    showActiveTooltip: false,
-    afterRender: function () {
-        gsap.defaults({
-            ease: "none"
-        });
-        const tlTexto = gsap.timeline({
-            repeat: Infinity,
-            repeatDelay: 1,
-        });
-        tlTexto.to(".titulo p", {
-            duration: 2,
-            text: "Singer. Songwriter. Producer."
-        });
-        const tlMusic = gsap.timeline({
-            repeatDelay: 1,
-        });
+/**
+ * Smooth Scrolling when anchor links
+ */
+ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-        tlMusic.to(".music h1", {
-            duration: 2,
-            text: "Check out some of his music!"
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
         });
-    },
-    afterLoad: function (origin, destination) {
-        if (destination.anchor == 'about') {
-            document.querySelector('.about-container img');
-        }
-    },
+    });
 });
 
+/**
+ * Set active class for bottom border when viewport is visible
+ */
+let isInViewport = function(elem){
+    let distance = elem.getBoundingClientRect();
+    return (
+        distance.top >= 0 &&
+        distance.left >= 0 &&
+        distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        distance.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+};
 
+let whereTo = document.querySelectorAll(".navTest");
+
+window.addEventListener('scroll', function(event){
+    whereTo.forEach(element => {
+        if (isInViewport(element)){
+            element.classList.add('.active');
+        }
+    });
+});
 
 /* ======== MY MUSIC PLAYER ========= */
 
@@ -125,40 +121,13 @@ window.onload = function () {
 
 /* ======= GSAP TEXT ANIMATION FOR THE LANDING PAGE ======== */
 
-/* gsap.defaults({ease: "none"});
+gsap.defaults({ease: "none"});
 const tlTexto = gsap.timeline({
     repeat:Infinity,
     repeatDelay:1,
 });
-tlTexto.to(".titulo p", {duration: 2, text:"Singer. Songwriter. Producer."}) */
+tlTexto.to(".titulo p", {duration: 2, text:"Singer. Songwriter. Producer."}) 
 
-/* ======= GSAP ANIMATION FOR THE ABOUT SECTION =========*/
-
-/* let tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".about",
-        start: "-50%",
-        end: "0%",
-        scrub: 1,
-    },
-});
-
-tl.fromTo(".about-imagen", {
-    x: 600
-}, {
-    x: 30
-})
-tl.fromTo('.about-titulo', {
-    opacity: 0
-}, {
-    opacity: 1
-});
- */
-/* ======= GSAP TEXT ANIMATION FOR THE MUSIC PAGE ======= */
-
-/* gsap.defaults({
-    ease: "none"
-});
 const tlMusic = gsap.timeline({
     repeatDelay: 1,
 });
@@ -166,18 +135,10 @@ const tlMusic = gsap.timeline({
 tlMusic.to(".music h1", {
     duration: 2,
     text: "Check out some of his music!"
-}) */
+});
 
-/* ======== CODE FOR THE APLAYER ON MUSIC PAGE ========= */
-/* const ap = new APlayer({
-    container: document.getElementById('aplayer'),
-    audio: [{
-        name: 'La Cura',
-        artist: 'Andrés Hoeflich',
-        url: '/lacura.mp3',
-        cover: '/img/aplayercover.jpg'
-    }]
-}); */
+
+
 
 /* I tried to only execute css animation when either on click about or BE in about page */
 
