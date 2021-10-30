@@ -122,11 +122,11 @@ window.onload = function () {
 /* ======= GSAP TEXT ANIMATION FOR THE LANDING PAGE ======== */
 
 gsap.defaults({ease: "none"});
-const tlTexto = gsap.timeline({
+const tlText = gsap.timeline({
     repeat:Infinity,
     repeatDelay:1,
 });
-tlTexto.to(".titulo p", {duration: 2, text:"Singer. Songwriter. Producer."}) 
+tlText.to(".title p", {duration: 2, text:"Singer. Songwriter. Producer."})
 
 const tlMusic = gsap.timeline({
     repeatDelay: 1,
