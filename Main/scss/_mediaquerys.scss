@@ -111,7 +111,7 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
         }
     }
 
-    .about-titulo {
+    .about-title {
         margin-top: 20vh;
         line-height: 0;
 
@@ -153,7 +153,7 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
         }
     }
 
-    .about-titulo {
+    .about-title {
         margin: 0;
         bottom: 10vh;
         line-height: 0;
@@ -203,7 +203,7 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
         }
     }
 
-    .about-titulo {
+    .about-title {
         margin-top: 20vh;
         line-height: 0;
 
@@ -231,7 +231,7 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
 }
 
 @include desktop {
-    .about-titulo {
+    .about-title {
         margin-top: 20vh;
         line-height: 0;
 
