@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 100%;
-  & .container-scroll {
+   .container-scroll {
     z-index: 90;
     position: absolute;
     bottom: 0;
@@ -9,17 +9,17 @@
     animation: up-n-down 1s ease infinite;
     margin: 25px 25px;
 
-    & P {
+     P {
       display: flex;
       justify-content: right;
       opacity: .5;
     }
 
-    & img {
+     img {
       width: 40px;
     }
 
-    & a {
+     a {
       text-decoration: none;
       font-size: 14px;
       color: $secondarycolor;
@@ -53,7 +53,7 @@
   color: $secondarycolor;
   font-size: 1.5vw;
   text-align: center;
-  & h1 {
+   h1 {
     z-index: 10;
     font-family: 'Poppins', sans-serif;
     color: $secondarycolor;
