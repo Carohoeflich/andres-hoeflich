@@ -1,6 +1,7 @@
 @import 'reset', 'variables', 'landing', 'navbar', 'about', 'music', 'photos', 'contact', 'mediaquerys';
 
 
+
 .section {
     width: 100vw;
     height: 100vh;
@@ -10,21 +11,4 @@
     -moz-box-sizing: border-box;
     /* <=28 */
     box-sizing: border-box;
-}
-
-.nav {
-    width: 100vw;
-    position: fixed;
-    z-index: 100;
-    justify-content: space-between;
-    top: 3%;
-    opacity: 1;
-    transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translate3d(0, -50%, 0);
-
-}
-
-.navTest.active {
-    border-bottom: 2px solid $accentcolor;
 }
