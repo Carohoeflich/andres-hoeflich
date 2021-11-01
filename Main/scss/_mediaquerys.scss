@@ -221,8 +221,11 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
         }
     }
 
+    .about-text{
+        margin-top: -23vh;
+    }
+
     .about-title {
-        margin-top: 20vh;
         line-height: 0;
 
         & h1 {
@@ -352,6 +355,14 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
     }
 }
 
+@include tablet {
+    .left-img{
+        h1{
+            font-size: 40px;
+        }
+    }
+}
+
 @include desktop {
     .contact-container {
         display: grid;
@@ -399,4 +410,15 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
 
 
     }
+}
+
+@include tablet {
+    .col-2{
+        padding: 0;
+        img{
+            width: 50vw;
+            height: 100vh;
+        }
+    }
+    
 }
