@@ -39,7 +39,8 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
     #volume {
         display: none;
     }
-    .wave{
+
+    .wave {
         width: 100%;
     }
 }
@@ -115,47 +116,16 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
 
 @include phone {
 
-    .about-text{
-        margin-top: -20px;
-    }
     .about-container {
-        height: 1000px;
-        display: flex;
-        flex-direction: column;
+
         img {
-            width: 50px;
-            height: 100px;
-            margin: auto;
-            border-radius: 50%;
+
             display: none;
-       }
-    }
-
-
-    .about-title {
-         h1 {
-            display: flex;
-            font-size: 20px;
-            color: $primarycolor;
-            text-align: center;
-            justify-content: center;
-            border-bottom: none;
-            padding: 0;
-        }
-
-         span {
-            font-size: 20px;
-            color: $primarycolor;
-            margin-right: 5px;
-        }
-
-         P {
-            margin-top: -10px;
-            font-size: 10px;
-            padding: 0 5px;
         }
     }
+
 }
+
 
 @include LGphone {
     .about-container {
@@ -163,22 +133,24 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
         flex-direction: column;
         height: 100vh;
 
-        & img {
-            width: 200px;
-            height: 300px;
-            margin: auto;
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 25vw;
+            max-width: 200px;
+            max-height: 200px;
             border-radius: 30%;
         }
     }
 
     .about-title {
         margin: 0;
-        bottom: 10vh;
+        top: -20px;
         line-height: 0;
         position: relative;
 
-        & h1 {
-            top: -1vh;
+        h1 {
+            top: 4vh;
             display: flex;
             font-size: 20px;
             color: $primarycolor;
@@ -187,16 +159,17 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
             border-bottom: none;
         }
 
-        & span {
+        span {
             letter-spacing: 0;
             font-size: 20px;
             color: $primarycolor;
             margin-right: 5px;
         }
 
-        & p {
+        p {
+            top: 10vh;
+            display: flex;
             font-size: 14px;
-            margin-top: 0;
             padding: 0;
         }
     }
@@ -221,7 +194,7 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
         }
     }
 
-    .about-text{
+    .about-text {
         margin-top: -23vh;
     }
 
@@ -253,7 +226,6 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
 
 @include desktop {
     .about-title {
-        margin-top: 20vh;
         line-height: 0;
 
         & h1 {
@@ -356,8 +328,8 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
 }
 
 @include tablet {
-    .left-img{
-        h1{
+    .left-img {
+        h1 {
             font-size: 40px;
         }
     }
@@ -413,12 +385,13 @@ $breakpoints: (phone : 320px, LGphone : 425px, tablet : 768px, desktop : 1024px,
 }
 
 @include tablet {
-    .col-2{
+    .col-2 {
         padding: 0;
-        img{
+
+        img {
             width: 50vw;
             height: 100vh;
         }
     }
-    
+
 }
