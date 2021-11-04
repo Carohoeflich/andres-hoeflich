@@ -4,7 +4,7 @@ footer {
     color: $secondarycolor;
     background-color: $primarycolor;
     height: 200px;
-    & img{
+     img{
         width: 30px;
         height: 30px;
         filter: invert(95%) sepia(100%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
