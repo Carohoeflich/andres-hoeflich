@@ -15,9 +15,11 @@
   box-sizing: border-box;
   color: #fff;
   width: 50%;
+  cursor: pointer;
   &:hover{
     opacity: .75;
   }
 }
 
-.error, .valid{display:none;}
+.error{display:none;
+color: red;}
